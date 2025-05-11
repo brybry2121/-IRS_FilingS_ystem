@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>USA Tax Filing System</title>
+    <link rel="stylesheet" href="irs.css">
+</head>
+<body>
+    <header>
+        <h1>USA Tax Filing System</h1>
+        <nav>
+            <ul>
+                <li><a href="#efile">E-File</a></li>
+                <li><a href="#forms">Tax Forms</a></li>
+                <li><a href="#refunds">Refunds & Payments</a></li>
+                <li><a href="#audit">Audit Risks</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="efile">
+            <h2>E-File Your Taxes</h2>
+            <form id="efileForm">
+                <label for="fullName">Full Name:</label>
+                <input type="text" id="fullName" name="fullName" placeholder="Enter your full name" required>
+                
+                <label for="ssn">Social Security Number (SSN):</label>
+                <input type="text" id="ssn" name="ssn" placeholder="XXX-XX-XXXX" pattern="\d{3}-\d{2}-\d{4}" required>
+
+                <label for="income">Total Income ($):</label>
+                <input type="number" id="income" name="income" placeholder="Enter your total income" required>
+
+                <button type="submit">Submit E-File</button>
+            </form>
+        </section>
+        <section id="forms">
+            <h2>Common Tax Forms</h2>
+            <ul>
+                <li><a href="https://www.irs.gov/pub/irs-pdf/f1040.pdf" target="_blank">Form 1040 - Individual Income Tax Return</a></li>
+                <li><a href="https://www.irs.gov/pub/irs-pdf/fw2.pdf" target="_blank">Form W-2 - Wage and Tax Statement</a></li>
+                <li><a href="https://www.irs.gov/pub/irs-pdf/f1099msc.pdf" target="_blank">Form 1099 - Additional Income</a></li>
+                <li><a href="https://www.irs.gov/pub/irs-pdf/f4868.pdf" target="_blank">Form 4868 - Tax Extension Request</a></li>
+            </ul>
+        </section>
+        <section id="refunds">
+            <h2>Refunds & Payments</h2>
+            <form id="refundForm">
+                <label for="trackingNumber">Refund Tracking Number:</label>
+                <input type="text" id="trackingNumber" name="trackingNumber" placeholder="Enter your tracking number" required>
+                <button type="submit">Track Refund</button>
+            </form>
+        </section>
+        <section id="audit">
+            <h2>Audit Risks</h2>
+            <p>The IRS has increased audits for middle-income earners and small businesses. Ensure all information is accurate to minimize audit risks and penalties.</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 USA Tax Filing System</p>
+    </footer>
+    <script src="irs.js"></script>
+</body>
+</html>
